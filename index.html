@@ -6,7 +6,9 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>e-commerce</title>
    <link rel="stylesheet" href="./css/index.css">
+   <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css">
    <script src="https://kit.fontawesome.com/54ce8c47a1.js.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
    <header>
@@ -17,7 +19,8 @@
            <button class="btn">Search</button>
         </div>
         <div class="menu-icons">
-           <i class="fa-solid fa-thumbs-up" onclick="myFunction(this)"></i>
+           <!-- <i class="bx bxs-like bx-md" onclick="myFunction(this)"></i> -->
+           <i class="fa fa-thumbs-up fa-2x" onclick="myFunction(this)"></i>
            <img src="./pic/user.png" alt="">
            <img src="./pic/cart.png" alt="">
         </div>
@@ -40,5 +43,11 @@
       </div>
       <img src="./pic/stylish-european-brunette-woman-red-coat-black-hat-posing-white-wall.jpg" alt="" class="sell">
    </section>
+   <script>
+      function myFunction(x) {
+      x.classList.toggle("fa-thumbs-down");
+    }
+   </script>
+    <script src="./main.js"></script>
 </body>
 </html>
