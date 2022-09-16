@@ -6,6 +6,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>product</title>
    <link rel="stylesheet" href="./css/index.css">
+   <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css">
    <script src="https://kit.fontawesome.com/54ce8c47a1.js.js"></script>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -32,5 +33,65 @@
          <p><a href="#contact">Contact</a></p>
       </div>
    </header>
+   <div class="product-sec">
+      <div class="sec">
+         <span>Home </span>
+         <span><i class="fa fa-chevron-right"  onmouseover="Func(this)"></i></span>
+      </div>
+      <div class="sec">
+         <span>Fashion </span>
+         <span><i class="fa fa-chevron-right" onmouseover="Func(this)"></i></span>
+      </div>
+      <div class="sec">
+         <span>Men's Fashion </span>
+         <span><i class="fa fa-chevron-right" onmouseover="Func(this)"></i></span>
+      </div>
+      <div class="sec">
+         <span>Shoes </span>
+         <span><i class="fa fa-chevron-right" onmouseover="Func(this)"></i></span>
+      </div>
+      <div class="sec">
+         <span>Fashion Sneakers </span>
+         <span><i class="fa fa-chevron-right" onmouseover="Func(this)"></i></span>
+      </div>
+      <div class="sec">
+         <span>Sneakers </span>
+         <span><i class="fa fa-chevron-right"  onmouseover="Func(this)"></i></span>
+      </div>
+      <div class="sec">
+         <span>Low-cut </span>
+         <span><i class="fa fa-chevron-right"  onmouseover="Func(this)"></i></span>
+      </div>
+      <div class="sec">
+         <span>Latest </span>
+         <span><i class="fa fa-chevron-right"  onmouseover="Func(this)" onmouseleave="myfunc(this)"></i></span>
+      </div>
+   </div>
+   <section class="product-util">
+      <div class="util-grid">
+         <div class="image-slider">
+            <div class="images">
+               <img src="./pic/card11.png" alt="" class="active">
+               <img src="./pic/sneaker2.jpg" alt="">
+               <img src="./pic/sneakers1.jpg" alt="">
+               <img src="./pic/sneakers4.jpg" alt="">
+            </div>
+         </div>
+         <div class="product-details"></div>
+      </div>
+   </section>
+   <script>
+      function myFunction(x) {
+         x.classList.toggle("fa-thumbs-down");
+      }
+      const ele = document.querySelectorAll(".fa-chevron-right");
+     function Func(x){
+         x.classList.toggle("fa-chevron-down");
+     }
+   //  function myfunc(x){
+   //    ele.removeEventListener("mouseover",mouse(x))
+   //  }
+   </script>
+   <script src="./main.js"></script>
 </body>
 </html>
