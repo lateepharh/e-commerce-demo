@@ -5,8 +5,132 @@
   width: 100%;
 }
 .product-sec img {
-  width: 20px;
-  width: 20px;
+  width: 15px;
+  height: 15px;
+}
+
+.produt-util {
+  height: fit-content;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin: 10px 8vw;
+  border-radius: 10px;
+}
+
+.util-grid {
+  display: flex;
+  gap: 10px;
+  margin-left: 8vw;
+  padding: 10px 12px;
+  background-color: #fff;
+}
+
+.image-slider {
+  height: 300px;
+  width: 300px;
+  position: relative;
+  background-image: url(../pic/card11.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.images {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: #fff;
+  height: 50px;
+  gap: 10px;
+  padding: 10px;
+}
+.images img {
+  width: 100%;
+  height: 50px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.images img.active {
+  opacity: 0.5;
+}
+
+.cover {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.cover h2 {
+  text-transform: uppercase;
+  font-weight: 800;
+  border-top: 1px solid grey;
+  padding: 8px 0;
+}
+.cover span {
+  height: fit-content;
+  width: fit-content;
+  border: 1px solid black;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+.size-radio-btn {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 18px;
+  border: 1px solid rgb(228, 151, 7);
+  border-radius: 50%;
+  margin: 0 10px;
+  margin-left: 0;
+  padding: 5px 5px 5px 5px;
+  line-height: 40px;
+  align-self: center;
+  text-transform: uppercase;
+  color: #383838;
+  cursor: pointer;
+}
+
+.size-radio-btn.check {
+  background-color: rgb(228, 151, 7);
+  color: #fff;
+}
+
+.btn {
+  width: 48%;
+  padding: 20px;
+  background: none;
+  border: 1px solid #383838;
+  color: #383838;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 20px 0;
+  text-transform: capitalize;
+}
+
+.ratings p {
+  background: rgb(228, 151, 7);
+  color: #f5f5f5;
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.size {
+  border-top: 1px solid rgb(148, 147, 147);
+}
+.size aside {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+.size aside h2 {
+  text-transform: uppercase;
+  font-size: 17px;
 }
 
 *::before, *::after {
@@ -82,7 +206,7 @@ header {
   border-bottom-left-radius: 10px;
 }
 
-.btn {
+.btnn {
   padding: 12px 20px;
   height: fit-content;
   width: fit-content;

@@ -10,3 +10,12 @@ images.forEach((item,i)=>{
       activeImage= i;
    })
 })
+const sizeBtn = document.querySelectorAll(".size-radio-btn");
+let checkedbtn = 0;
+sizeBtn.forEach((items,i)=>{
+   items.addEventListener("click",()=>{
+      sizeBtn[checkedbtn].classList.remove("check");
+      items.classList.add("check");
+      checkedbtn = i;
+   })
+})

@@ -6,6 +6,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>product</title>
    <link rel="stylesheet" href="./css/index.css">
+   <link rel="stylesheet" href="./css/product.css">
    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css">
    <script src="https://kit.fontawesome.com/54ce8c47a1.js.js"></script>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -16,7 +17,7 @@
         <img src="./pic/dark-logo.png" alt="" class="logo">
         <div class="search-menu">
            <input type="search" name="search" id="search" placeholder="search product here.....">
-           <button class="btn">Search</button>
+           <button class="btnn">Search</button>
         </div>
         <div class="menu-icons">
            <!-- <i class="bx bxs-like bx-md" onclick="myFunction(this)"></i> -->
@@ -69,15 +70,104 @@
    </div>
    <section class="product-util">
       <div class="util-grid">
-         <div class="image-slider">
-            <div class="images">
-               <img src="./pic/card11.png" alt="" class="active">
-               <img src="./pic/sneaker2.jpg" alt="">
-               <img src="./pic/sneakers1.jpg" alt="">
-               <img src="./pic/sneakers4.jpg" alt="">
+         <div class="cover">
+            <div class="image-slider">
+               <div class="images">
+                  <img src="./pic/card11.png" alt="" class="active">
+                  <img src="./pic/card12.png" alt="">
+                  <img src="./pic/card10.png" alt="">
+                  <img src="./pic/card9.png" alt="">
+               </div>
+            </div>
+            <h2>Share this product</h2>
+            <div>
+               <span><i class="fa fa-facebook"></i></span>
+               <span><i class="fa fa-twitter"></i></span>
             </div>
          </div>
-         <div class="product-details"></div>
+         <div class="product-details">
+            <p>Men's causual PU Sneakers</p>
+            <div class="ratings">
+               <span><i class="fa fa-star" style="color: rgb(228, 151, 7);"></i></span>
+               <span><i class="fa fa-star" style="color: rgb(228,151,7);"></i></span>
+               <span><i class="fa fa-star" style="color: rgb(228, 151, 7);"></i></span>
+               <span><i class="fa fa-star" style="color: rgb(228, 151, 7);"></i></span>
+               <span><i class="fa fa-star" style="color: rgb(228, 151, 7);"></i></span>
+               <span style="color: rgb(20, 20, 73);font-size:14px;">(1885 verified rathings)</span>
+               <p>free delivery</p>
+            </div>
+            <p>&#8358 8,500</p>
+            <p>
+               <span class="through">&#8358 9,002</span>
+               <span class="discount">-6%</span>
+            </p>
+            <p>Few units left</p>
+            <p>+ shipping from &#8358 150 to LEKKI-AJAH(SANGOTEDO)</p>
+            <div class="size">
+               <aside>
+                  <h2>variation available</h2>
+                  <p><a href="#">Size Guide</a></p>
+               </aside>
+               <input type="radio" name="size" id="s-size" value="EU 40" checked hidden>
+               <label for="s-size" class="size-radio-btn check" >EU 40</label>
+               <input type="radio" name="size" id="m-size" value="EU 41"  hidden>
+               <label for="m-size" class="size-radio-btn " >EU 41</label>
+               <input type="radio" name="size" id="l-size" value="EU 42" hidden>
+               <label for="l-size" class="size-radio-btn " >EU 42</label>
+               <input type="radio" name="size" id="xl-size" value="EU 43" hidden>
+               <label for="xl-size" class="size-radio-btn " >EU 43</label>
+               <input type="radio" name="size" id="xxl-size" value="EU 44" hidden>
+               <label for="xxl-size" class="size-radio-btn " >EU 44</label>
+            </div>
+            <div class="cart">Add to cart</div>
+            <h2 class="promo">promotions</h2>
+            <div>
+               <span class="star"><i class="fa fa-star" style="color: #f5f5f5;"></i></span>
+               <span>Enjoy cheaper shipping fees when you select a pickup station</span>
+            </div>
+         </div>
+      </div>
+      <div class="delivery-info">
+         <h2>delivery & returns</h2>
+         <p class="brand">Brand <span style="color: orange;"><i class="fa fa-location" style="color: orange;"></i>Express</span></p>
+         <p>Free delivery on thousand of products in Lagos <br> Ibadan & Abuja Details</p>
+         <label for="location">Choose your Location</label><br>
+         <select name="location" id="location" >
+            <option value="lagos">Lagos</option>
+            <option value="Ogun">Ogun</option>
+            <option value="ibadan">Ibadan</option>
+            <option value="abuja">Abuja</option>
+            <option value="osun">Osun</option>
+            <option value="abia">Abia</option>
+            <option value="ekiti">Ekiti</option>
+            <option value="ondo">Ondo</option>
+            <option value="Kastina">Kastina</option>
+            <option value="kano">kano</option>
+            <option value="jos">Jos</option>
+            <option value="imo">Imo</option>
+         </select>
+         <div class="delivery-track">
+            <i class="fa fa-v"></i>
+            <div class="door">
+               <h3>Door delivery</h3>
+            </div>
+            <a href="#">Details</a>
+         </div>
+         <div class="delivery-track">
+            <i class="fa fa-van"></i>
+            <div class="door">
+               <h3>Pickup station</h3><br>
+            </div>
+            <a href="#">Details</a>
+         </div>
+         <div class="delivery-track">
+            <i class="fa fa-van"></i>
+            <div class="door">
+               <h3>Return policy</h3>
+            </div>
+            <a href="#">Details</a>
+         </div>
+         
       </div>
    </section>
    <script>
