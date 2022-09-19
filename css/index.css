@@ -9,24 +9,24 @@
   height: 15px;
 }
 
-.produt-util {
+.product-util {
   height: fit-content;
   width: 100vw;
+  gap: 15px;
   display: grid;
   grid-template-columns: 2fr 1fr;
-  margin: 10px 8vw;
-  border-radius: 10px;
+  padding: 10px 0;
+  background-color: #f5f5f5;
 }
 
 .util-grid {
   display: flex;
   gap: 10px;
-  margin-left: 8vw;
-  padding: 10px 12px;
   background-color: #fff;
 }
 
 .image-slider {
+  border-radius: 10px;
   height: 300px;
   width: 300px;
   position: relative;
@@ -113,6 +113,9 @@
   text-transform: capitalize;
 }
 
+.ratings {
+  border-bottom: 1px solid rgb(148, 147, 147);
+}
 .ratings p {
   background: rgb(228, 151, 7);
   color: #f5f5f5;
@@ -131,6 +134,83 @@
 .size aside h2 {
   text-transform: uppercase;
   font-size: 17px;
+}
+
+.discount {
+  color: rgb(228, 151, 7);
+  background-color: rgb(245, 211, 149);
+  padding: 3px;
+  font-size: 14px;
+  margin: 0 10px;
+}
+
+.cart {
+  background-color: rgb(228, 151, 7);
+  border-radius: 10px;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.1);
+  height: 20px;
+  color: #f5f5f5;
+  text-align: center;
+  padding: 15px 10px;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+
+.star {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: rgb(228, 151, 7);
+  margin-left: 10px;
+}
+
+.promo {
+  margin: 5px 0;
+  padding: 10px 0;
+  border-top: 1px solid rgb(148, 147, 147);
+  text-transform: uppercase;
+}
+
+.delivery-track, .this {
+  display: flex;
+  justify-content: space-between;
+}
+.delivery-track a, .this a {
+  align-self: center;
+}
+
+.delivery-info {
+  padding: 0 10px;
+  margin-right: 8vw;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.delivery-info h2 {
+  text-transform: uppercase;
+  border-bottom: 1px solid rgb(148, 147, 147);
+  padding: 10px 0;
+}
+
+.brand {
+  text-transform: uppercase;
+  border-bottom: 1px solid rgb(148, 147, 147);
+  padding: 10px 0;
+}
+
+label {
+  padding: 10px 0;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+select {
+  height: 20px;
+  padding: 20px 15px;
+  width: 250px;
+  margin: 10px 0;
+}
+select::placeholder {
+  visibility: visible;
 }
 
 *::before, *::after {
@@ -357,4 +437,55 @@ a {
 .through {
   text-decoration: line-through;
   color: grey;
+}
+
+.apparel.card {
+  width: 250px;
+  height: 400px;
+  border-radius: 15px;
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+}
+.apparel.card img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.brand {
+  color: grey;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.brands {
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.actual-price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.apparel {
+  padding: 20px 8vw;
+  background-color: #f5f5f5;
+  width: 100%;
+  height: fit-content;
+}
+
+.cart-price {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  padding: 10px;
+  background-color: rgb(240, 212, 161);
+}
+
+.apparel-grid {
+  display: flex;
+  gap: 20px;
 }/*# sourceMappingURL=index.css.map */

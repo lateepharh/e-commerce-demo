@@ -171,11 +171,11 @@
   text-transform: uppercase;
 }
 
-.delivery-track {
+.delivery-track, .this {
   display: flex;
   justify-content: space-between;
 }
-.delivery-track a {
+.delivery-track a, .this a {
   align-self: center;
 }
 
