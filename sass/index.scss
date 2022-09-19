@@ -203,21 +203,24 @@ a{
    text-decoration: line-through;
    color:grey;
 }
-.apparel.card{
+.apparel-card{
    width:250px;
-   height: 400px;
-   border-radius: 15px;
-   padding: 15px;
+   height: 390px;
+   border-radius: 20px;
+   padding: 15px 15px 20px 15px;
    background-color: #fff;
    box-shadow: 0 8px 8px rgba(0,0,0,0.2);
+   &:hover{
+      transform:scale(1.1)
+   }
    img{
-      width: 220px;
+      width: 240px;
       height: 220px;
       object-fit: cover;
       border-radius: 15px;
    }
 }
-.brand{
+.name{
    color:grey;
    font-weight:600;
    font-size:15px
@@ -229,21 +232,28 @@ a{
 .actual-price{
    display:flex;
    justify-content: space-between;
+   p{
+      align-self: center;
+      color:rgb(240, 212, 161);
+   }
 }
 .apparel{
-   padding: 20px 8vw;
+   padding: 20px 0;
    background-color: #f5f5f5;
    width: 100%;
    height:fit-content;
 }
 .cart-price{
-   height: 30px;
-   width: 30px;
+   height: 20px;
+   width: 20px;
    border-radius: 50%;
+   align-self: center;
    padding: 10px;
    background-color: rgb(240, 212, 161);
 }
 .apparel-grid{
-   display: flex;
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
    gap: 20px;
+   padding: 0 8vw;
 }
