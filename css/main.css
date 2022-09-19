@@ -3,6 +3,11 @@
   height: 250px;
   border-radius: 10px;
 }
+.jewlery-card img {
+  object-fit: cover;
+  width: 150px;
+  height: 150px;
+}
 
 .slideshow-container {
   max-width: 220px;
@@ -13,8 +18,24 @@
   vertical-align: middle;
 }
 
+.colored {
+  background-color: rgb(228, 151, 7);
+}
+
 .mySlides {
   display: none;
+}
+.mySlides button {
+  width: fit-content;
+  height: fit-content;
+  border-radius: 25px;
+  padding: 15px 20px;
+  background-color: #fff;
+}
+.mySlides a {
+  text-decoration: none;
+  color: #383838;
+  text-transform: capitalize;
 }
 
 .fade {
@@ -42,4 +63,30 @@
 
 .actives {
   background-color: rgba(113, 113, 113, 0.4431372549);
+}
+
+.trend {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: #383838;
+}
+
+.jewlery-grid {
+  display: flex;
+  gap: 15px;
+  padding: 20px 8vw;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  width: 100%;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.jewlery-coll {
+  width: 100%;
+  height: fit-content;
+  background-color: #fff;
 }/*# sourceMappingURL=main.css.map */
