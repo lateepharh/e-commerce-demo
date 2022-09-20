@@ -509,6 +509,7 @@ a {
   color: rgb(240, 212, 161);
   font-size: 18px;
   padding: 15px 8vw;
+  margin: 15px 0;
 }
 .view:hover {
   transition: all 0.4s;

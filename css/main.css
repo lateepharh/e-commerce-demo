@@ -7,6 +7,7 @@
   object-fit: cover;
   width: 200px;
   height: 150px;
+  border-radius: 10px;
 }
 
 .slideshow-container {
@@ -90,4 +91,14 @@
   padding: 20px 8vw;
   background-color: #fff;
   height: fit-content;
+}
+.jewel-coll h2 {
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 20px;
+}
+.jewel-coll .offer-off {
+  font-size: 14px;
+  text-transform: capitalize;
+  color: grey;
 }/*# sourceMappingURL=main.css.map */
