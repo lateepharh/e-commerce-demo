@@ -1,11 +1,11 @@
-.jewlery-card {
-  width: 250px;
+.jewelry-card {
+  width: 200px;
   height: 250px;
   border-radius: 10px;
 }
-.jewlery-card img {
+.jewelry-card img {
   object-fit: cover;
-  width: 150px;
+  width: 200px;
   height: 150px;
 }
 
@@ -20,6 +20,7 @@
 
 .colored {
   background-color: rgb(228, 151, 7);
+  position: relative;
 }
 
 .mySlides {
@@ -72,10 +73,9 @@
   color: #383838;
 }
 
-.jewlery-grid {
+.jewel-grid {
   display: flex;
   gap: 15px;
-  padding: 20px 8vw;
   overflow-x: scroll;
   scroll-behavior: smooth;
   width: 100%;
@@ -86,9 +86,8 @@
   display: none;
 }
 
-.jewlery-coll {
-  width: 100vw;
-  height: fit-content;
+.jewel-coll {
+  padding: 20px 8vw;
   background-color: #fff;
   height: fit-content;
 }/*# sourceMappingURL=main.css.map */

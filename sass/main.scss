@@ -1,10 +1,10 @@
-.jewlery-card{
-   width: 250px;
+.jewelry-card{
+   width: 200px;
    height: 250px;
    border-radius: 10px;
    img{
       object-fit:cover;
-      width: 150px;
+      width: 200px;
       height:150px;
    }
 }
@@ -17,6 +17,7 @@
 }
 .colored{
    background-color: rgb(228,151,7);
+   position:relative;
 }
 .mySlides{
    display: none;
@@ -59,10 +60,10 @@
    text-align: center;
    color: #383838;
 }
-.jewlery-grid{
+.jewel-grid{
    display: flex;
    gap: 15px;
-   padding: 20px 8vw;
+   // padding: 20px 8vw;
    overflow-x:scroll;
    scroll-behavior: smooth;
    width:100%;
@@ -72,9 +73,8 @@
 ::-webkit-scrollbar{
    display:none;
 }
-.jewlery-coll{
-   width: 100vw;
-   height: fit-content;
+.jewel-coll{
+   padding: 20px 8vw;
    background-color: #fff;
    height:fit-content;
 }
