@@ -66,13 +66,15 @@
    overflow-x:scroll;
    scroll-behavior: smooth;
    width:100%;
+   height: fit-content;
 
 }
 ::-webkit-scrollbar{
    display:none;
 }
 .jewlery-coll{
-   width: 100%;
+   width: 100vw;
    height: fit-content;
    background-color: #fff;
+   height:fit-content;
 }

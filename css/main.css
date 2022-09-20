@@ -79,6 +79,7 @@
   overflow-x: scroll;
   scroll-behavior: smooth;
   width: 100%;
+  height: fit-content;
 }
 
 ::-webkit-scrollbar {
@@ -86,7 +87,8 @@
 }
 
 .jewlery-coll {
-  width: 100%;
+  width: 100vw;
   height: fit-content;
   background-color: #fff;
+  height: fit-content;
 }/*# sourceMappingURL=main.css.map */
