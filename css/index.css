@@ -441,7 +441,7 @@ a {
 
 .apparel-card {
   width: 250px;
-  height: 390px;
+  height: 350px;
   border-radius: 20px;
   padding: 15px 15px 20px 15px;
   background-color: #fff;
@@ -451,7 +451,7 @@ a {
   transform: scale(1.1);
 }
 .apparel-card img {
-  width: 240px;
+  width: 220px;
   height: 220px;
   object-fit: cover;
   border-radius: 15px;
@@ -488,12 +488,13 @@ a {
 }
 
 .cart-price {
-  height: 20px;
-  width: 20px;
+  height: 30px;
+  width: 30px;
   border-radius: 50%;
   align-self: center;
-  padding: 10px;
+  padding: 10px 0 12px 0;
   background-color: rgb(240, 212, 161);
+  text-align: center;
 }
 
 .apparel-grid {
