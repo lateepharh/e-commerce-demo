@@ -51,21 +51,21 @@ header{
       transition: 0.4s ease-in;
       text-transform: capitalize;
       font-size:18px;
-      &:hover, &:active{
+      &:hover, &.activate{
          opacity: 1;
       }
    }
 
 }
 .nav-bar p a:hover::after,
-.nav-bar p a:active::after{
+.nav-bar p a.activate::after{
    content:"";
-   width: 30%;
-   height: 2px;
+   width: 50%;
+   height: 3px;
    background-color: #383838;
    position: absolute;
    bottom: -4px;
-   left: 20px;
+   left: 15px;
 }
 .logo{
    object-fit: cover;
