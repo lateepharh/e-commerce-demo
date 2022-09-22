@@ -37,8 +37,11 @@ header{
    display:flex;
    justify-content: center;
    gap:15px;
-   padding: 10px 0;
+   padding: 20px 0;
    border-top: 1px solid grey;
+   p{
+      position:relative;
+   }
 
    a{
       text-decoration: none;
@@ -48,11 +51,21 @@ header{
       transition: 0.4s ease-in;
       text-transform: capitalize;
       font-size:18px;
-      &:hover{
+      &:hover, &:active{
          opacity: 1;
       }
    }
 
+}
+.nav-bar p a:hover::after,
+.nav-bar p a:active::after{
+   content:"";
+   width: 30%;
+   height: 2px;
+   background-color: #383838;
+   position: absolute;
+   bottom: -4px;
+   left: 20px;
 }
 .logo{
    object-fit: cover;

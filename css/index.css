@@ -255,8 +255,11 @@ header {
   display: flex;
   justify-content: center;
   gap: 15px;
-  padding: 10px 0;
+  padding: 20px 0;
   border-top: 1px solid grey;
+}
+.nav-bar p {
+  position: relative;
 }
 .nav-bar a {
   text-decoration: none;
@@ -267,8 +270,19 @@ header {
   text-transform: capitalize;
   font-size: 18px;
 }
-.nav-bar a:hover {
+.nav-bar a:hover, .nav-bar a:active {
   opacity: 1;
+}
+
+.nav-bar p a:hover::after,
+.nav-bar p a:active::after {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background-color: #383838;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
 }
 
 .logo {
