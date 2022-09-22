@@ -40,3 +40,17 @@ function showSlides(){
    dots[slideIndex - 1 ].className += "active";
    setTimeout(showSlides, 2000)
 }
+const barIcon = document.getElementById("bar");
+const closeIcon = document.getElementById("close-toggle");
+const nav = document.getElementById("navbar")
+if (bar) {
+   barIcon.addEventListener("click", ()=>{
+      nav.classList.add("actives")
+   });
+}
+//close toggle
+if (bar) {
+   closeIcon.addEventListener("click",()=>{
+      nav.classList.remove("actives")
+   })
+}
