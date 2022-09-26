@@ -54,3 +54,12 @@ if (bar) {
       nav.classList.remove("actives")
    })
 }
+const searchBtn = document.querySelector("search-btn");
+const cancelBtn = document.querySelector(".cancel.btn");
+const searchBox = document.querySelector(".search-box");
+searchBtn.addEventListener("click", ()=>{
+   searchBox.classList.add("actives");
+})
+cancelBtn.addEventListener("click",()=>{
+   searchBox.classList.remove("actives")
+})

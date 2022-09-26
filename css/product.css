@@ -144,7 +144,7 @@
   margin: 0 10px;
 }
 
-.cart {
+.carted {
   background-color: rgb(228, 151, 7);
   border-radius: 10px;
   box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.1);
@@ -211,4 +211,23 @@ select {
 }
 select::placeholder {
   visibility: visible;
+}
+
+.feature-card {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #f5f5f5;
+}
+.feature-card img {
+  width: 180px;
+  height: 130px;
+  object-fit: cover;
+}
+
+.feature {
+  height: fit-content;
+  padding: 20px 8vw;
+  width: 100vw;
 }/*# sourceMappingURL=product.css.map */

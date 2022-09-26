@@ -96,6 +96,9 @@
    justify-content: space-between;
    padding: 10px 8vw;
    color: #f5f5f5;
+   @include responsive{
+      padding: 10px 5vw;
+   }
    span{
       margin-left: 10px;
    }
@@ -112,6 +115,12 @@ footer{
    width: 100%;
    background-color: rgb(150, 99, 5);
    color: #f5f5f5;
+   @include responsive{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px 8vw;
+   }
    p{
       text-transform: capitalize;
       font-size: 15px;
@@ -151,6 +160,12 @@ footer{
    background-color: rgb(150, 99, 5);
    border: none;
    color: #f5f5f5;
+   @include responsive{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px 5vw;
+   }
    #email{
       width: 250px;
       height: fit-content;

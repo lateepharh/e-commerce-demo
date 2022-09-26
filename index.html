@@ -24,7 +24,13 @@
            <i class="fa fa-thumbs-up fa-2x" onclick="myFunction(this)"></i>
            <img src="./pic/user.png" alt="">
            <img src="./pic/cart.png" alt="">
+           <a href="#" id="close-toggle"><i class="fa fa-times-circle"></i></a>
         </div>
+        <div class="hamburger">
+         <img src="./pic/user.png" alt="">
+         <img src="./pic/cart.png" alt="">
+         <i class="fa fa-bars" id="bar"></i>
+     </div>
       </nav>
       <div class="nav-bar">
          <p><a href="index.html" class="activate">Home</a></p>
@@ -32,6 +38,15 @@
          <p><a href="#categories">Categories</a></p>
          <p><a href="#Services">services</a></p>
          <p><a href="#contact">Contact</a></p>
+         <div class="search-box">
+            <input type="search" name="s" id="s" placeholder="search product here">
+            <div class="search-btn">
+               <i class="fa fa-search"></i>
+            </div>
+            <div class="cancel-btn">
+               <i class="fa fa-times-circle"></i>
+            </div>
+         </div>
       </div>
    </header>
    <section class="product-sell">
@@ -44,6 +59,7 @@
       </div>
       <img src="./pic/stylish-european-brunette-woman-red-coat-black-hat-posing-white-wall.jpg" alt="" class="sell">
    </section>
+   <marquee behavior="scroll" direction="left" loop="-1" scrollamount="5" width="100%" >Get up to 50% by shopping at least 4 items.Shop Now!!!</marquee>
    <section class="best">
       <h2>Recommended for you</h2>
       <p class="de">Quality items and super deals</p>
@@ -195,9 +211,9 @@
       <h2>Our clothing apparel</h2>
       <div class="apparel-grid">
          <div class="apparel-card">
-            <img src="./pic/card4.png" alt="">
-            <p class="name">m & m</p>
-            <p class="brands">creme fitted dress</p>
+            <img src="./pic/card4.png" alt="" class="shop-item-image">
+            <p class="name shop-item-title" >m & m</p>
+            <p class="brands shop-item-image" >creme fitted dress</p>
             <p class="rate">
                <span><i class="fa fa-star" style="color:  rgb(228, 151, 7);"></i></span>
                <span><i class="fa fa-star" style="color:  rgb(228, 151, 7);"></i></span>
@@ -205,15 +221,15 @@
                <span><i class="fa fa-star" style="color:  rgb(228, 151, 7);"></i></span>
                <span><i class="fa fa-star" style="color:  rgb(228, 151, 7);"></i></span>
             </p>
-            <aside class="actual-price">
-               <p>&#8358 6,000</p>
-               <p class="cart-price"><i class="fa fa-cart-plus" style="color:  rgb(228, 151, 7);"></i></p>
+            <aside class="actual-price shop-item-details">
+               <p class="shop-item-price">&#8358 6,000</p>
+               <p class="cart-price shop-item-button"><i class="fa fa-cart-plus" style="color:  rgb(228, 151, 7);"></i></p>
             </aside>
          </div>
          <div class="apparel-card">
-            <img src="./pic/card3.png" alt="">
+            <img src="./pic/card3.png" alt="" class="shop-item-image">
             <p class="name">asos</p>
-            <p class="brands">Causual two-piece</p>
+            <p class="brands shop-item-title">Causual two-piece</p>
             <p class="rate">
                <span><i class="fa fa-star" style="color:  rgb(228, 151, 7);"></i></span>
                <span><i class="fa fa-star" style="color:  rgb(228, 151, 7);"></i></span>
@@ -221,15 +237,15 @@
                <span><i class="fa fa-star" style="color:  rgb(228, 151, 7);"></i></span>
                <span><i class="fa fa-star" style="color:  rgb(228, 151, 7);"></i></span>
             </p>
-            <aside class="actual-price">
-               <p>&#8358 15,000</p>
-               <p class="cart-price"><i class="fa fa-cart-plus" style="color:  rgb(228, 151, 7);"></i></p>
+            <aside class="actual-price shop-item-details">
+               <p class="shop-item-price">&#8358 15,000</p>
+               <p class="cart-price shop-item-button"><i class="fa fa-cart-plus" style="color:  rgb(228, 151, 7);"></i></p>
             </aside>
          </div>
          <div class="apparel-card">
-            <img src="./pic/jeantop.jpg" alt="">
+            <img src="./pic/jeantop.jpg" alt="" class="shop-item-image">
             <p class="name">zara</p>
-            <p class="brands">jean corset top</p>
+            <p class="brands shop-item-title">jean corset top</p>
             <p class="rate">
                <span><i class="fa fa-star" style="color:  rgb(228, 151, 7);"></i></span>
                <span><i class="fa fa-star" style="color:  rgb(228, 151, 7);"></i></span>
@@ -237,15 +253,15 @@
                <span><i class="fa fa-star" style="color:  rgb(228, 151, 7);"></i></span>
                <span><i class="fa fa-star" style="color:  rgb(228, 151, 7);"></i></span>
             </p>
-            <aside class="actual-price">
-               <p>&#8358 6,000</p>
-               <p class="cart-price"><i class="fa fa-cart-plus" style="color:  rgb(228, 151, 7);"></i></p>
+            <aside class="actual-price shop-item-details">
+               <p class="shop-item-price">&#8358 6,000</p>
+               <p class="cart-price shop-item-button"><i class="fa fa-cart-plus" style="color:  rgb(228, 151, 7);"></i></p>
             </aside>
          </div>
          <div class="apparel-card">
-            <img src="./pic/men jac.jpg" alt="">
+            <img src="./pic/men jac.jpg" alt="" class="shop-item-image">
             <p class="name">asos</p>
-            <p class="brands">casual men's Jacket</p>
+            <p class="brands shop-item-title">casual men's Jacket</p>
             <p class="rate">
                <span><i class="fa fa-star" style="color:  rgb(228, 151, 7);"></i></span>
                <span><i class="fa fa-star" style="color:  rgb(228, 151, 7);"></i></span>
@@ -253,15 +269,15 @@
                <span><i class="fa fa-star" style="color:  rgb(228, 151, 7);"></i></span>
                <span><i class="fa fa-star" style="color:  rgb(228, 151, 7);"></i></span>
             </p>
-            <aside class="actual-price">
-               <p>&#8358 9,000</p>
-               <p class="cart-price"><i class="fa fa-cart-plus" style="color:  rgb(228, 151, 7);"></i></p>
+            <aside class="actual-price shop-item-details">
+               <p class="shop-item-price">&#8358 9,000</p>
+               <p class="cart-price shop-item-button"><i class="fa fa-cart-plus" style="color:  rgb(228, 151, 7);"></i></p>
             </aside>
          </div>
          <div class="apparel-card">
-            <img src="./pic/men top1.jpg" alt="">
+            <img src="./pic/men top1.jpg" alt="" class="shop-item-image">
             <p class="name">boy inn</p>
-            <p class="brands">stripe shirt</p>
+            <p class="brands shop-item-title">stripe shirt</p>
             <p class="rate">
                <span><i class="fa fa-star" style="color:  rgb(228, 151, 7);"></i></span>
                <span><i class="fa fa-star" style="color:  rgb(228, 151, 7);"></i></span>
@@ -269,15 +285,15 @@
                <span><i class="fa fa-star" style="color:  rgb(228, 151, 7);"></i></span>
                <span><i class="fa fa-star" style="color:  rgb(228, 151, 7);"></i></span>
             </p>
-            <aside class="actual-price">
-               <p>&#8358 6,000</p>
-               <p class="cart-price"><i class="fa fa-cart-plus" style="color:  rgb(228, 151, 7);"></i></p>
+            <aside class="actual-price shop-item-details">
+               <p class="shop-item-price">&#8358 6,000</p>
+               <p class="cart-price shop-item-button"><i class="fa fa-cart-plus" style="color:  rgb(228, 151, 7);"></i></p>
             </aside>
          </div>
          <div class="apparel-card">
-            <img src="./pic/product image 3.png" alt="">
+            <img src="./pic/product image 3.png" alt="" class="shop-item-image">
             <p class="name">calvin</p>
-            <p class="brands">Round neck polo</p>
+            <p class="brands shop-item-title">Round neck polo</p>
             <p class="rate">
                <span><i class="fa fa-star" style="color:  rgb(228, 151, 7);"></i></span>
                <span><i class="fa fa-star" style="color:  rgb(228, 151, 7);"></i></span>
@@ -285,15 +301,15 @@
                <span><i class="fa fa-star" style="color:  rgb(228, 151, 7);"></i></span>
                <span><i class="fa fa-star" style="color:  rgb(228, 151, 7);"></i></span>
             </p>
-            <aside class="actual-price">
-               <p>&#8358 10,000</p>
-               <p class="cart-price"><i class="fa fa-cart-plus" style="color:  rgb(228, 151, 7);"></i></p>
+            <aside class="actual-price shop-item-details">
+               <p class="shop-item-price">&#8358 10,000</p>
+               <p class="cart-price shop-item-button"><i class="fa fa-cart-plus" style="color:  rgb(228, 151, 7);"></i></p>
             </aside>
          </div>
          <div class="apparel-card">
-            <img src="./pic/top 2.jpg" alt="">
+            <img src="./pic/top 2.jpg" alt="" class="shop-item-image" >
             <p class="name">m & m</p>
-            <p class="brands">cold shoulder blouse</p>
+            <p class="brands shop-item-title">cold shoulder blouse</p>
             <p class="rate">
                <span><i class="fa fa-star" style="color:  rgb(228, 151, 7);"></i></span>
                <span><i class="fa fa-star" style="color:  rgb(228, 151, 7);"></i></span>
@@ -301,15 +317,15 @@
                <span><i class="fa fa-star" style="color:  rgb(228, 151, 7);"></i></span>
                <span><i class="fa fa-star" style="color:  rgb(228, 151, 7);"></i></span>
             </p>
-            <aside class="actual-price">
-               <p>&#8358 3,000</p>
-               <p class="cart-price"><i class="fa fa-cart-plus" style="color:  rgb(228, 151, 7);"></i></p>
+            <aside class="actual-price shop-item-details">
+               <p class="shop-item-price">&#8358 3,000</p>
+               <p class="cart-price shop-item-button"><i class="fa fa-cart-plus" style="color:  rgb(228, 151, 7);"></i></p>
             </aside>
          </div>
          <div class="apparel-card">
-            <img src="./pic/jeantop.jpg" alt="">
+            <img src="./pic/jeantop.jpg" alt="" class="shop-item-image">
             <p class="name">ingree</p>
-            <p class="brands">puff sleeve jeantopp>
+            <p class="brands shop-item-title">puff sleeve jeantopp>
             <p class="rate">
                <span><i class="fa fa-star" style="color:  rgb(228, 151, 7);"></i></span>
                <span><i class="fa fa-star" style="color:  rgb(228, 151, 7);"></i></span>
@@ -317,15 +333,15 @@
                <span><i class="fa fa-star" style="color:  rgb(228, 151, 7);"></i></span>
                <span><i class="fa fa-star" style="color:  rgb(228, 151, 7);"></i></span>
             </p>
-            <aside class="actual-price">
-               <p class="tag">&#8358 6,000</p>
-               <p class="cart-price"><i class="fa fa-cart-plus" style="color:  rgb(228, 151, 7);"></i></p>
+            <aside class="actual-price shop-item-details">
+               <p class="tag shop-item-price">&#8358 6,000</p>
+               <p class="cart-price shop-item-button"><i class="fa fa-cart-plus" style="color:  rgb(228, 151, 7);"></i></p>
             </aside>
          </div>
          <div class="apparel-card">
-            <img src="./pic/sunglass1.jpg" alt="">
+            <img src="./pic/sunglass1.jpg" alt="" class="shop-item-image">
             <p class="name">g & g</p>
-            <p class="brands">female beach shades</p>
+            <p class="brands shop-item-title">female beach shades</p>
             <p class="rate">
                <span><i class="fa fa-star" style="color:  rgb(228, 151, 7);"></i></span>
                <span><i class="fa fa-star" style="color:  rgb(228, 151, 7);"></i></span>
@@ -333,15 +349,15 @@
                <span><i class="fa fa-star" style="color:  rgb(228, 151, 7);"></i></span>
                <span><i class="fa fa-star" style="color:  rgb(228, 151, 7);"></i></span>
             </p>
-            <aside class="actual-price">
-               <p class="tag">&#8358 4,000</p>
-               <p class="cart-price"><i class="fa fa-cart-plus" style="color:  rgb(228, 151, 7);"></i></p>
+            <aside class="actual-price shop-item-details">
+               <p class="tag shop-item-price">&#8358 4,000</p>
+               <p class="cart-price shop-item-button"><i class="fa fa-cart-plus" style="color:  rgb(228, 151, 7);"></i></p>
             </aside>
          </div>
          <div class="apparel-card">
-            <img src="./pic/bag 2.png" alt="">
+            <img src="./pic/bag 2.png" alt="" class="shop-item-image">
             <p class="name">shein</p>
-            <p class="brands">blue one-handed bag</p>
+            <p class="brands shop-item-title">blue one-handed bag</p>
             <p class="rate">
                <span><i class="fa fa-star" style="color:  rgb(228, 151, 7);"></i></span>
                <span><i class="fa fa-star" style="color:  rgb(228, 151, 7);"></i></span>
@@ -349,15 +365,15 @@
                <span><i class="fa fa-star" style="color:  rgb(228, 151, 7);"></i></span>
                <span><i class="fa fa-star" style="color:  rgb(228, 151, 7);"></i></span>
             </p>
-            <aside class="actual-price">
-               <p class="tag">&#8358 20,000</p>
-               <p class="cart-price"><i class="fa fa-cart-plus" style="color:  rgb(228, 151, 7);"></i></p>
+            <aside class="actual-price shop-item-details">
+               <p class="tag shop-item-price">&#8358 20,000</p>
+               <p class="cart-price shop-item-button"><i class="fa fa-cart-plus" style="color:  rgb(228, 151, 7);"></i></p>
             </aside>
          </div>
          <div class="apparel-card">
-            <img src="./pic/male bag2.jpg" alt="">
+            <img src="./pic/male bag2.jpg" alt="" class="shop-item-image">
             <p class="name">nike</p>
-            <p class="brands">men's cross bag</p>
+            <p class="brands shop-item-title">men's cross bag</p>
             <p class="rate">
                <span><i class="fa fa-star" style="color:  rgb(228, 151, 7);"></i></span>
                <span><i class="fa fa-star" style="color:  rgb(228, 151, 7);"></i></span>
@@ -365,15 +381,15 @@
                <span><i class="fa fa-star" style="color:  rgb(228, 151, 7);"></i></span>
                <span><i class="fa fa-star" style="color:  rgb(228, 151, 7);"></i></span>
             </p>
-            <aside class="actual-price">
-               <p class="tag">&#8358 40,000</p>
-               <p class="cart-price"><i class="fa fa-cart-plus" style="color:  rgb(228, 151, 7);"></i></p>
+            <aside class="actual-price shop-item-details">
+               <p class="tag shop-item-price">&#8358 40,000</p>
+               <p class="cart-price shop-item-button"><i class="fa fa-cart-plus" style="color:  rgb(228, 151, 7);"></i></p>
             </aside>
          </div>
          <div class="apparel-card">
-            <img src="./pic/men jac.jpg" alt="">
+            <img src="./pic/men jac.jpg" alt="" class="shop-item-image">
             <p class="name">m & m</p>
-            <p class="brands">causual winter jacket</p>
+            <p class="brands shop-item-title">causual winter jacket</p>
             <p class="rate">
                <span><i class="fa fa-star" style="color:  rgb(228, 151, 7);"></i></span>
                <span><i class="fa fa-star" style="color:  rgb(228, 151, 7);"></i></span>
@@ -381,9 +397,9 @@
                <span><i class="fa fa-star" style="color:  rgb(228, 151, 7);"></i></span>
                <span><i class="fa fa-star" style="color:  rgb(228, 151, 7);"></i></span>
             </p>
-            <aside class="actual-price">
-               <p class="tag">&#8358 16,000</p>
-               <p class="cart-price"><i class="fa fa-cart-plus" style="color:  rgb(228, 151, 7);"></i></p>
+            <aside class="actual-price shop-item-details">
+               <p class="tag shop-item-price">&#8358 16,000</p>
+               <p class="cart-price shop-item-button"><a href="./cart.html"><i class="fa fa-cart-plus" style="color:  rgb(228, 151, 7);"></i></a></p>
             </aside>
          </div>
       </div>
@@ -606,5 +622,6 @@
     }
    </script>
     <script src="./main.js"></script>
+    <script src="./cart.js"></script>
 </body>
 </html>
