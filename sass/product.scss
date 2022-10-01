@@ -12,11 +12,11 @@
 .product-util{
    height: fit-content;
    // grid-template-rows: 1fr;
-   width: 100vw;
+   // width: 100vw;
    gap: 15px;
    display: grid;
    grid-template-columns:2fr 1fr ;
-   padding: 10px 0;
+   padding: 20px 0 20px 8vw;
    // background-color: #f5f5f5;
    // border-radius: 10px;
    background-color: #f5f5f5;
@@ -24,8 +24,10 @@
 .util-grid{
    display: flex;
    gap:10px;
+   height: fit-content;
    // margin-left: 8vw;
    background-color: #fff;
+   padding: 20px 10px;
 
 }
 .image-slider{
@@ -46,7 +48,7 @@
    display: grid;
    grid-template-columns: repeat(4,1fr);
    background-color: #fff;
-   height: 50px;
+   height: 70px;
    gap:10px;
    padding: 10px;
    img{
@@ -64,6 +66,7 @@
    display:flex;
    flex-direction: column;
    gap:10px;
+   height: fit-content;
    h2{
       text-transform: uppercase;
       font-weight: 800;
@@ -80,8 +83,8 @@
 }
 .size-radio-btn{
    display: inline-block;
-   width: 50px;
-   height: 50px;
+   width: 60px;
+   height: 60px;
    text-align: center;
    font-size: 18px;
    border: 1px solid rgb(228, 151, 7);
@@ -117,6 +120,8 @@
       color: #f5f5f5;
       font-size: 14px;
       margin: 10px 0;
+      width: fit-content;
+      padding: 0 8px;
    }
 }
 .size{
@@ -142,7 +147,8 @@
    background-color: rgb(228, 151, 7);
    border-radius: 10px;
    box-shadow: 5px 5px 8px rgba(0,0,0,0.1);
-   height: 20px;
+   height: fit-content;
+   width: 300px;
    color: #f5f5f5;
    text-align: center;
    padding: 15px 10px;
@@ -173,7 +179,8 @@
 }
 .delivery-info{
    padding: 0 10px;
-   margin-right: 8vw;
+   // width:20vw;
+   // margin-right: 8vw;
    background-color: #fff;
    border-radius: 10px;
    h2{
