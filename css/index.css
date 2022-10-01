@@ -249,8 +249,9 @@ nav {
   padding: 20px 8vw;
 }
 
-.nav {
+.wrap {
   display: none;
+  align-self: center;
 }
 
 .checkbox {
@@ -262,90 +263,37 @@ nav {
     display: none;
   }
   .ham {
-    position: relative;
+    position: absolute;
     top: 3em;
     right: 5%;
+    margin-left: -2em;
+    margin-top: -45px;
+    background-color: #090E6B;
     width: 2em;
-    z-index: 5001;
-    padding: 5px;
-    height: 30px;
+    height: 45px;
+    z-index: 5;
   }
-  .ham-line {
-    position: absolute;
-    width: 1.8em;
-    height: 3px;
-    border-radius: 4px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    align-self: center;
-    transition: all 0.3s ease-in-out;
+  .ham div {
+    position: relative;
+    width: 3em;
+    height: 8px;
+    border-radius: 5px;
     background-color: #383838;
-  }
-  .ham::before, .ham::after {
-    position: absolute;
-    width: 1.8em;
-    height: 3px;
-    border-radius: 4px;
-    top: 25%;
-    align-self: center;
+    margin-top: 8px;
     transition: all 0.3s ease-in-out;
-    background-color: #383838;
-  }
-  .ham::after {
-    top: 75%;
   }
   .nav {
     position: fixed;
-    width: 300px;
+    width: 100%;
     height: 100%;
-    top: 0;
-    z-index: 4999;
+    background-color: #090E6B;
+    top: -100%;
+    left: 0;
     right: 0;
-    background-color: #f5f5f5;
+    bottom: 0;
     overflow: hidden;
     transition: all 0.3s ease-in-out;
     transform: scale(0);
-    display: flex;
-    flex-direction: column;
-  }
-  .nav a {
-    position: relative;
-    text-decoration: none;
-    transition: color 0.2s ease-in-out;
-    display: inline-block;
-    margin-top: 1.2em;
-    color: #383838;
-  }
-  .nav a::before {
-    content: "";
-    height: 0;
-    position: absolute;
-    width: 0.25em;
-    background-color: #383838;
-    left: -0.5em;
-    transition: all 0.2s ease-in-out;
-  }
-  .nav a:hover {
-    color: #383838;
-  }
-  .nav a:hover::before {
-    height: 100%;
-  }
-  .checkbox:checked ~ .ham::before {
-    top: 50%;
-    transform: translate(-50%, -50%) rotate(40deg);
-  }
-  .checkbox:checked ~ .ham .ham-line {
-    opacity: 0;
-  }
-  .checkbox:checked ~ .ham::after {
-    transform: rotate(-45deg), translate(-50%, -50%);
-    top: 50%;
-  }
-  .checkbox:checked ~ .nav {
-    top: 0;
-    transform: scale(1);
   }
 }
 .menu-icons {
