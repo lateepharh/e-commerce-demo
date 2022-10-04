@@ -173,12 +173,19 @@
 .delivery-track, .this{
    display:flex;
    justify-content: space-between;
+   gap: 15px;
+   margin: 10px 0;
    a{
       align-self: center;
    }
+   i{
+      font-size: 20px;
+   }
+   
 }
 .delivery-info{
    padding: 0 10px;
+   height: fit-content;
    // width:20vw;
    // margin-right: 8vw;
    background-color: #fff;
@@ -224,4 +231,59 @@ select{
    height: fit-content;
    padding: 20px 8vw;
    width: 100vw;
+}
+.door{
+   display: flex;
+   flex-direction: column;
+   align-self: center;
+}
+.specifications{
+   @extend .product-util;
+}
+.specific-flex{
+   display: flex;
+   justify-content: space-between;
+   border: 1px solid grey;
+
+   .key-features,.specific, .pack{
+      border: 1px solid grey;
+      border-radius: 5px;
+      padding: 15px 0;
+      width: 400px;
+      height: 250px;
+      margin: 15px ;
+      h2, h3{
+         font-family:century ;
+         text-transform: uppercase;
+         border-bottom: 1px solid grey;
+         padding: 0 20px 10px 20px;
+      }
+   }
+   p,ul{
+      padding: 5px 20px;
+   }
+}
+.specific-grid{
+   background-color: #fff;
+   border-radius: 20px;
+   height: fit-content;
+   padding: 20px;
+}
+.carted-2{
+   @extend .carted;
+   text-transform: uppercase;
+}
+.spec-flex{
+   display: flex;
+   gap:15px;
+   padding: 15px;
+   img{
+      width:50px;
+      height:50px;
+      object-fit:cover;
+   }
+}
+.second-spec{
+   background-color: #fff;
+   height: fit-content;
 }

@@ -9,7 +9,7 @@
   height: 15px;
 }
 
-.product-util {
+.product-util, .specifications {
   height: fit-content;
   gap: 15px;
   display: grid;
@@ -148,7 +148,7 @@
   margin: 0 10px;
 }
 
-.carted {
+.carted, .carted-2 {
   background-color: rgb(228, 151, 7);
   border-radius: 10px;
   box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.1);
@@ -179,13 +179,19 @@
 .delivery-track, .this {
   display: flex;
   justify-content: space-between;
+  gap: 15px;
+  margin: 10px 0;
 }
 .delivery-track a, .this a {
   align-self: center;
 }
+.delivery-track i, .this i {
+  font-size: 20px;
+}
 
 .delivery-info {
   padding: 0 10px;
+  height: fit-content;
   background-color: #fff;
   border-radius: 10px;
 }
@@ -234,4 +240,60 @@ select::placeholder {
   height: fit-content;
   padding: 20px 8vw;
   width: 100vw;
+}
+
+.door {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.specific-flex {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid grey;
+}
+.specific-flex .key-features, .specific-flex .specific, .specific-flex .pack {
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 15px 0;
+  width: 400px;
+  height: 250px;
+  margin: 15px;
+}
+.specific-flex .key-features h2, .specific-flex .key-features h3, .specific-flex .specific h2, .specific-flex .specific h3, .specific-flex .pack h2, .specific-flex .pack h3 {
+  font-family: century;
+  text-transform: uppercase;
+  border-bottom: 1px solid grey;
+  padding: 0 20px 10px 20px;
+}
+.specific-flex p, .specific-flex ul {
+  padding: 5px 20px;
+}
+
+.specific-grid {
+  background-color: #fff;
+  border-radius: 20px;
+  height: fit-content;
+  padding: 20px;
+}
+
+.carted-2 {
+  text-transform: uppercase;
+}
+
+.spec-flex {
+  display: flex;
+  gap: 15px;
+  padding: 15px;
+}
+.spec-flex img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.second-spec {
+  background-color: #fff;
+  height: fit-content;
 }/*# sourceMappingURL=product.css.map */
