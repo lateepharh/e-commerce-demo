@@ -10,6 +10,7 @@
    <script src="https://kit.fontawesome.com/54ce8c47a1.js.js"></script>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <link rel="stylesheet" href="./css/main.css">
+   <script src="/cart.js" async></script>
 </head>
 <body>
    <header>
@@ -23,7 +24,12 @@
            <!-- <i class="bx bxs-like bx-md" onclick="myFunction(this)"></i> -->
            <i class="fa fa-thumbs-up fa-2x" onclick="myFunction(this)"></i>
            <img src="./pic/user.png" alt="">
-           <img src="./pic/cart.png" alt="">
+           <p class="cartss">
+              <a href="./cart.html">
+                 <i class="fa fa-cart-plus"></i>Cart <span>0</span>
+              </a>
+            </p>
+           <!-- <img src="./pic/cart.png" alt=""> -->
         </div>
         <div class="wrap">
            <input type="checkbox" name="toggle" id="toggle" class="checkbox">
@@ -225,7 +231,7 @@
             </p>
             <aside class="actual-price shop-item-details">
                <p class="shop-item-price">&#8358 6,000</p>
-               <p class="cart-price shop-item-button"><i class="fa fa-cart-plus" style="color:  rgb(228, 151, 7);"></i></p>
+               <p class="cart-price add-cart"><i class="fa fa-cart-plus" style="color:  rgb(228, 151, 7);"></i></p>
             </aside>
          </div>
          <div class="apparel-card">
@@ -241,7 +247,7 @@
             </p>
             <aside class="actual-price shop-item-details">
                <p class="shop-item-price">&#8358 15,000</p>
-               <p class="cart-price shop-item-button"><i class="fa fa-cart-plus" style="color:  rgb(228, 151, 7);"></i></p>
+               <p class="cart-price add-cart"><i class="fa fa-cart-plus" style="color:  rgb(228, 151, 7);"></i></p>
             </aside>
          </div>
          <div class="apparel-card">
@@ -257,7 +263,7 @@
             </p>
             <aside class="actual-price shop-item-details">
                <p class="shop-item-price">&#8358 6,000</p>
-               <p class="cart-price shop-item-button"><i class="fa fa-cart-plus" style="color:  rgb(228, 151, 7);"></i></p>
+               <p class="cart-price add-cart"><i class="fa fa-cart-plus" style="color:  rgb(228, 151, 7);"></i></p>
             </aside>
          </div>
          <div class="apparel-card">
@@ -273,7 +279,7 @@
             </p>
             <aside class="actual-price shop-item-details">
                <p class="shop-item-price">&#8358 9,000</p>
-               <p class="cart-price shop-item-button"><i class="fa fa-cart-plus" style="color:  rgb(228, 151, 7);"></i></p>
+               <p class="cart-price add-cart"><i class="fa fa-cart-plus" style="color:  rgb(228, 151, 7);"></i></p>
             </aside>
          </div>
          <div class="apparel-card">
@@ -289,7 +295,7 @@
             </p>
             <aside class="actual-price shop-item-details">
                <p class="shop-item-price">&#8358 6,000</p>
-               <p class="cart-price shop-item-button"><i class="fa fa-cart-plus" style="color:  rgb(228, 151, 7);"></i></p>
+               <p class="cart-price add-cart"><i class="fa fa-cart-plus" style="color:  rgb(228, 151, 7);"></i></p>
             </aside>
          </div>
          <div class="apparel-card">
@@ -305,7 +311,7 @@
             </p>
             <aside class="actual-price shop-item-details">
                <p class="shop-item-price">&#8358 10,000</p>
-               <p class="cart-price shop-item-button"><i class="fa fa-cart-plus" style="color:  rgb(228, 151, 7);"></i></p>
+               <p class="cart-price add-cart"><i class="fa fa-cart-plus" style="color:  rgb(228, 151, 7);"></i></p>
             </aside>
          </div>
          <div class="apparel-card">
@@ -321,11 +327,11 @@
             </p>
             <aside class="actual-price shop-item-details">
                <p class="shop-item-price">&#8358 3,000</p>
-               <p class="cart-price shop-item-button"><i class="fa fa-cart-plus" style="color:  rgb(228, 151, 7);"></i></p>
+               <p class="cart-price add-cart"><i class="fa fa-cart-plus" style="color:  rgb(228, 151, 7);"></i></p>
             </aside>
          </div>
          <div class="apparel-card">
-            <img src="./pic/jeantop.jpg" alt="" class="shop-item-image">
+            <img src="./pic/jean top.jpg" alt="" class="shop-item-image">
             <p class="name">ingree</p>
             <p class="brands shop-item-title">puff sleeve jeantopp>
             <p class="rate">
@@ -337,7 +343,7 @@
             </p>
             <aside class="actual-price shop-item-details">
                <p class="tag shop-item-price">&#8358 6,000</p>
-               <p class="cart-price shop-item-button"><i class="fa fa-cart-plus" style="color:  rgb(228, 151, 7);"></i></p>
+               <p class="cart-price add-cart"><i class="fa fa-cart-plus" style="color:  rgb(228, 151, 7);"></i></p>
             </aside>
          </div>
          <div class="apparel-card">
@@ -353,7 +359,7 @@
             </p>
             <aside class="actual-price shop-item-details">
                <p class="tag shop-item-price">&#8358 4,000</p>
-               <p class="cart-price shop-item-button"><i class="fa fa-cart-plus" style="color:  rgb(228, 151, 7);"></i></p>
+               <p class="cart-price add-cart"><i class="fa fa-cart-plus" style="color:  rgb(228, 151, 7);"></i></p>
             </aside>
          </div>
          <div class="apparel-card">
@@ -369,7 +375,7 @@
             </p>
             <aside class="actual-price shop-item-details">
                <p class="tag shop-item-price">&#8358 20,000</p>
-               <p class="cart-price shop-item-button"><i class="fa fa-cart-plus" style="color:  rgb(228, 151, 7);"></i></p>
+               <p class="cart-price add-cart"><i class="fa fa-cart-plus" style="color:  rgb(228, 151, 7);"></i></p>
             </aside>
          </div>
          <div class="apparel-card">
@@ -385,13 +391,13 @@
             </p>
             <aside class="actual-price shop-item-details">
                <p class="tag shop-item-price">&#8358 40,000</p>
-               <p class="cart-price shop-item-button"><i class="fa fa-cart-plus" style="color:  rgb(228, 151, 7);"></i></p>
+               <p class="cart-price add-cart"><i class="fa fa-cart-plus" style="color:  rgb(228, 151, 7);"></i></p>
             </aside>
          </div>
          <div class="apparel-card">
-            <img src="./pic/men jac.jpg" alt="" class="shop-item-image">
+            <img src="./pic/men jac1.jpg" alt="" class="shop-item-image">
             <p class="name">m & m</p>
-            <p class="brands shop-item-title">causual winter jacket</p>
+            <p class="brands shop-item-title">causual jacket</p>
             <p class="rate">
                <span><i class="fa fa-star" style="color:  rgb(228, 151, 7);"></i></span>
                <span><i class="fa fa-star" style="color:  rgb(228, 151, 7);"></i></span>
@@ -401,7 +407,7 @@
             </p>
             <aside class="actual-price shop-item-details">
                <p class="tag shop-item-price">&#8358 16,000</p>
-               <p class="cart-price shop-item-button"><a href="./cart.html"><i class="fa fa-cart-plus" style="color:  rgb(228, 151, 7);"></i></a></p>
+               <p class="cart-price add-cart"><a href="./cart.html"><i class="fa fa-cart-plus" style="color:  rgb(228, 151, 7);"></i></a></p>
             </aside>
          </div>
       </div>

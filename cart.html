@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Carted product</title>
+   <link rel="stylesheet" href="./css/index.css">
+   <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css">
+   <script src="https://kit.fontawesome.com/54ce8c47a1.js.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="./css/main.css">
+   <link rel="stylesheet" href="/css/cart.css">
+   <script src="./cart.js" async></script>
+</head>
+<body>
+   <header>
+      <nav>
+        <img src="./pic/dark-logo.png" alt="" class="logo">
+        <div class="search-menu">
+           <input type="search" name="search" id="search" placeholder="search product here.....">
+           <button class="btnn">Search</button>
+        </div>
+        <div class="menu-icons">
+           <!-- <i class="bx bxs-like bx-md" onclick="myFunction(this)"></i> -->
+           <i class="fa fa-thumbs-up fa-2x" onclick="myFunction(this)"></i>
+           <img src="./pic/user.png" alt="">
+           <p class="cartss">
+              <a href="./cart.html" target="_blank">
+                 <i class="fa fa-cart-plus"></i>Cart <span>0</span>
+              </a>
+            </p>
+           <!-- <img src="./pic/cart.png" alt=""> -->
+        </div>
+        <div class="wrap">
+           <input type="checkbox" name="toggle" id="toggle" class="checkbox">
+           <label for="toggle" class="ham">
+               <div class="top-bun"> </div>
+              <div class="meat"></div>
+              <div class="bottom-bun"></div>
+           </label>
+           <div class="nav">
+               <p><a href="index.html" class="activate">Home</a></p>
+               <p><a href="#product">Product</a></p>
+               <p><a href="#categories">Categories</a></p>
+               <p><a href="#Services">services</a></p>
+               <p><a href="./contact.html">Contact</a></p>
+             </div>
+           </div>
+        </div>
+
+      </nav>
+      <div class="nav-bar">
+         <p><a href="index.html" class="activate">Home</a></p>
+         <p><a href="#product">Product</a></p>
+         <p><a href="#categories">Categories</a></p>
+         <p><a href="#Services">services</a></p>
+         <p><a href="#contact">Contact</a></p>
+      </div>
+   </header>
+   <section class="content-section section-p1 cart-added">
+      <!-- <h2 class="section-header">Cart Totals</h2> -->
+
+      <div class="cart-row">
+         <span class="cart-item cart-header cart-column">ITEM</span>
+         <span class="cart-pricess cart-header cart-column">PRICE</span>
+         <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+      </div>
+
+      <div class="cart-items">
+      </div>
+   </section>
+   <script src="./cart.js"></script>
+
+</body>
+</html>

@@ -1,103 +1,166 @@
-if (document.readyState == 'loading') {
-   document.addEventListener('DOMContentLoaded', ready)
-} else {
-   ready()
-}
-
-function ready() {
-   var removeCartItemButtons = document.getElementsByClassName('btn-danger')
-   for (var i = 0; i < removeCartItemButtons.length; i++) {
-       var button = removeCartItemButtons[i]
-       button.addEventListener('click', removeCartItem)
-   }
-
-   var quantityInputs = document.getElementsByClassName('cart-quantity-input')
-   for (var i = 0; i < quantityInputs.length; i++) {
-       var input = quantityInputs[i]
-       input.addEventListener('change', quantityChanged)
-   }
-
-   var addToCartButtons = document.getElementsByClassName('shop-item-button')
-   for (var i = 0; i < addToCartButtons.length; i++) {
-       var button = addToCartButtons[i]
-       button.addEventListener('click', addToCartClicked)
-   }
-
-   document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
-}
-
-function purchaseClicked() {
-   alert('Thank you for your purchase')
-   var cartItems = document.getElementsByClassName('cart-items')[0]
-   while (cartItems.hasChildNodes()) {
-       cartItems.removeChild(cartItems.firstChild)
-   }
-   updateCartTotal()
-}
-
-function removeCartItem(event) {
-   var buttonClicked = event.target
-   buttonClicked.parentElement.parentElement.remove()
-   updateCartTotal()
-}
-
-function quantityChanged(event) {
-   var input = event.target
-   if (isNaN(input.value) || input.value <= 0) {
-       input.value = 1
-   }
-   updateCartTotal()
-}
-
-function addToCartClicked(event) {
-   var button = event.target
-   var shopItem = button.parentElement.parentElement
-   var title = shopItem.getElementsByClassName('shop-item-title')[0].innerText
-   var price = shopItem.getElementsByClassName('shop-item-price')[0].innerText
-   var imageSrc = shopItem.getElementsByClassName('shop-item-image')[0].src
-   addItemToCart(title, price, imageSrc)
-   updateCartTotal()
-}
-
-function addItemToCart(title, price, imageSrc) {
-   var cartRow = document.createElement('div')
-   cartRow.classList.add('cart-row')
-   var cartItems = document.getElementsByClassName('cart-items')[0]
-   var cartItemNames = cartItems.getElementsByClassName('cart-item-title')
-   for (var i = 0; i < cartItemNames.length; i++) {
-       if (cartItemNames[i].innerText == title) {
-           alert('This item is already added to the cart')
-           return
+var carts = document.querySelectorAll(".add-cart");
+var product = [
+    {
+        name:'Creme fitted Dress',
+      price:6000,
+       tag:'card4',
+       inCart:0
+    },
+    {
+       name:'Casual Two-piece',
+       price:15000 ,
+       tag:"card3",
+       inCart:0
+    },
+    {
+       name:'Jean Corset Top',
+       price:6000,
+       tag:"jeantop",
+       inCart:0
+    },
+    {
+       name:'Casual Men Jacket',
+       price:9000,
+       tag:"menjac",
+       inCart:0
+    },
+    {
+       name:'Stripe Shirt',
+       price:6000,
+       tag:"men top 1",
+       inCart:0
+    },
+    {
+       name:'Round Neck Polo',
+       price:10000,
+       tag:"product image3",
+       inCart:0
+    },
+    {
+       name:'Cold Shoulder Blouse',
+       price:3000,
+       tag:"top 2",
+       inCart:0
+    },
+    {
+       name:'Puff Sleeve Jeantop',
+       price:6000,
+       tag:"jean top",
+       inCart:0
+    },
+    {
+       name:'Female Beach Shades',
+       price:4000,
+       tag:"sunglass1",
+       inCart:0
+    },
+    {
+       name:'Blue One-handed Bag',
+       price:20000,
+       tag:"bag 2",
+       inCart:0
+    },
+    {
+       name:'Men Cross Bag',
+       price:40000,
+       tag:" male bag 2",
+       inCart:0
+    },
+    {
+       name:'Causual Jacket',
+       price:16000,
+       tag:" men jac1",
+       inCart:0
+    },
+ ]
+for (let i = 0; i < carts.length; i++){
+    carts[i].addEventListener("click",()=>{
+        // console.log("added to cart");
+        cartNumbers(product[i]);
+        totalCost(product[i])
+    })
+};
+// it shows number of iten in the cart
+function onloadCartNumber(){
+    let productNumbers = localStorage.getItem('cartNumbers');
+    if (productNumbers) {
+       document.querySelector('.cartss span').textContent = productNumbers;
+       
+    }
+ }
+ // when the add to cart is clicked the function helps to store it
+ function cartNumbers(product){
+    console.log("the product clicked is", product);
+    let productNumbers = localStorage.getItem('cartNumbers');
+    productNumbers = parseInt(productNumbers);
+    if (productNumbers) {
+       localStorage.setItem('cartNumbers',productNumbers + 1);
+       document.querySelector('.cartss span').textContent = productNumbers + 1;
+    }else{
+       localStorage.setItem('cartNumbers', 1);
+       document.querySelector('.cartss span').textContent = 0;
+    }
+    // localStorage.setItem('cartNumbers',1)
+    setItems(product)
+ }
+ //for the incart number and to checks wheter it exis already in cart
+ function setItems(product) {
+    let cartItems =localStorage.getItem('productInCart');
+    cartItems = JSON.parse(cartItems);
+    if (cartItems != null) {
+       // console.log(cartItems[product.tag]);
+       if (cartItems[product.tag] == undefined) {
+          cartItems = {
+             ...cartItems,
+             [product.tag]:product
+          }
        }
-   }
-   var cartRowContents = `
-       <div class="cart-item cart-column">
-           <img class="cart-item-image" src="${imageSrc}" width="100" height="100">
-           <span class="cart-item-title">${title}</span>
-       </div>
-       <span class="cart-price cart-column">${price}</span>
-       <div class="cart-quantity cart-column">
-           <input class="cart-quantity-input" type="number" value="1">
-           <button class="btn btn-danger" type="button">Remove</button>
-       </div>`
-   cartRow.innerHTML = cartRowContents
-   cartItems.append(cartRow)
-   cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', removeCartItem)
-   cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('change', quantityChanged)
+       cartItems[product.tag].inCart += 1;
+    }else{
+       product.inCart = 1;
+       cartItems = {
+        [product.tag]:product
+       }
+    }
+    localStorage.setItem('productInCart',JSON.stringify(cartItems));
 }
-
-function updateCartTotal() {
-   var cartItemContainer = document.getElementsByClassName('cart-items')[0]
-   var cartRows = cartItemContainer.getElementsByClassName('cart-row')
-   var total = 0
-   for (var i = 0; i < cartRows.length; i++) {
-       var cartRow = cartRows[i]
-       var priceElement = cartRow.getElementsByClassName('cart-price')[0]
-       var quantityElement = cartRow.getElementsByClassName('cart-quantity-input')[0]
-       var price = parseFloat(priceElement.innerText.replace('$', ''))
-       var quantity = quantityElement.value
-       total = total + (price * quantity)
-   }
-   total = Math.round(total * 100) / 100
-   document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total
+function totalCost(products){
+    // console.log("product price is", products.price);
+    let cartCost = localStorage.getItem('totalCost');
+    if (cartCost != null) {
+      cartCost = parseInt(cartCost);
+       localStorage.setItem('totalCost',cartCost + products.price)
+    }else{
+       localStorage.setItem('totalCost', products.price)
+    }
+    // console.log("product price is", products.price);
 }
+function displyCart() {
+    let cartItems = localStorage.getItem("productInCart");
+    cartItems = JSON.parse(cartItems);
+    // console.log(cartItems);
+    let productContainer = document.querySelector('.cart-items');
+   let cartCost = localStorage.getItem('totalCost');
+   // the if checks if the product-container is on the page and if our cartitems got something
+   if (cartItems && productContainer) {
+      // console.log("running");
+      productContainer.innerHTML = "";
+      Object.values(cartItems).map(item =>{
+           productContainer.innerHTML += `
+           <div class="cart-item cart-column">
+               <i class="fa fa-times-circle"></i>
+               <img src="../picture/${item.tag}.jpg" class="cart-item-image">
+              <span class="cart-item-title">${item.name}</span>
+           </div>
+           <div class="cart-pricess cart-column">${item.price}</div>
+           <div class="cart-quantity cart-column">
+               <input class="cart-quantity-input" type="number" value="1">
+               <span>${item.inCart}</span>
+            </div>
+           `
+        })
+    }
+}
+onloadCartNumber();
+displyCart(); 
+ 
