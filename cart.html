@@ -27,7 +27,7 @@
            <img src="./pic/user.png" alt="">
            <p class="cartss">
               <a href="./cart.html" target="_blank">
-                 <i class="fa fa-cart-plus"></i>Cart <span>0</span>
+                 <i class="fa fa-cart-plus"><sup>0</sup></i> 
               </a>
             </p>
            <!-- <img src="./pic/cart.png" alt=""> -->
@@ -58,18 +58,15 @@
          <p><a href="#contact">Contact</a></p>
       </div>
    </header>
-   <section class="content-section section-p1 cart-added">
-      <!-- <h2 class="section-header">Cart Totals</h2> -->
-
-      <div class="cart-row">
-         <span class="cart-item cart-header cart-column">ITEM</span>
-         <span class="cart-pricess cart-header cart-column">PRICE</span>
-         <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+   <div class="product-container">
+      <div class="product-header">
+         <h5 class="product-title">Product</h5>
+         <h5 class="price ">Price</h5>
+         <h5 class="quantity">Quantity</h5>
+         <h5 class="total">Total</h5>
       </div>
-
-      <div class="cart-items">
-      </div>
-   </section>
+      <div class="products"></div>
+   </div>
    <script src="./cart.js"></script>
 
 </body>

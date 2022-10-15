@@ -317,32 +317,32 @@ nav {
 
 .wrap {
   display: none;
-  align-self: center;
-}
-
-.checkbox {
-  display: none;
 }
 
 .cartss {
-  background-color: #383838;
   padding: 4px 8px;
-  color: #f5f5f5;
   height: fit-content;
   align-self: center;
 }
+.cartss i {
+  font-size: 24px;
+}
 .cartss a {
-  color: #f5f5f5;
   margin-right: 3px;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
 }
-.cartss span {
+.cartss sup {
   margin-left: 5px;
+  font-size: 13;
+  vertical-align: super;
 }
 
 @media (max-width: 799px) {
-  #toggle {
+  .wrap {
+    display: block;
+  }
+  #checkbox {
     display: none;
   }
   .ham {
@@ -350,33 +350,84 @@ nav {
     top: 3em;
     right: 5%;
     margin-left: -2em;
-    margin-top: -45px;
-    background-color: #090E6B;
+    margin-top: -39px;
     width: 2em;
     height: 45px;
-    z-index: 5;
+    z-index: 200;
   }
   .ham div {
     position: relative;
-    width: 3em;
-    height: 8px;
+    width: 2em;
+    height: 3.5px;
     border-radius: 5px;
     background-color: #383838;
-    margin-top: 8px;
+    margin-top: 7px;
     transition: all 0.3s ease-in-out;
   }
   .nav {
     position: fixed;
-    width: 100%;
-    height: 100%;
-    background-color: #090E6B;
-    top: -100%;
-    left: 0;
+    width: 250px;
+    height: 50vh;
+    background-color: #f5f5f5;
+    top: 12%;
     right: 0;
-    bottom: 0;
     overflow: hidden;
     transition: all 0.3s ease-in-out;
     transform: scale(0);
+    z-index: 199;
+    padding: 20px 0;
+  }
+  #nav-bar {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-direction: column;
+  }
+  #nav-bar p {
+    list-style: none;
+    position: relative;
+  }
+  #nav-bar p a {
+    text-decoration: none;
+    color: #383838;
+    opacity: 0.7;
+    font-size: 17px;
+    transition: all 0.3s ease-in-out;
+    text-transform: capitalize;
+    font-weight: 700;
+  }
+  #nav-bar p a:hover {
+    color: #383838;
+    opacity: 1;
+  }
+  #nav-bar p a.activate {
+    color: #383838;
+    opacity: 1;
+  }
+  #nav-bar p a.activate::after,
+#nav-bar p a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: #383838;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+  }
+  #checkbox:checked + .ham .top-bun {
+    transform: rotate(-45deg);
+    margin-top: 22px;
+  }
+  #checkbox:checked + .ham .bottom-bun {
+    opacity: 0;
+    transform: 45deg;
+  }
+  #checkbox:checked + .ham .meat {
+    transform: rotate(45deg);
+    margin-top: -5px;
+  }
+  #checkbox:checked + .ham + .nav {
+    transform: scale(1);
   }
 }
 .menu-icons {
