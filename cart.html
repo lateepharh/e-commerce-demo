@@ -16,39 +16,45 @@
 <body>
    <header>
       <nav>
-        <img src="./pic/dark-logo.png" alt="" class="logo">
-        <div class="search-menu">
-           <input type="search" name="search" id="search" placeholder="search product here.....">
-           <button class="btnn">Search</button>
-        </div>
-        <div class="menu-icons">
-           <!-- <i class="bx bxs-like bx-md" onclick="myFunction(this)"></i> -->
-           <i class="fa fa-thumbs-up fa-2x" onclick="myFunction(this)"></i>
-           <img src="./pic/user.png" alt="">
-           <p class="cartss">
-              <a href="./cart.html" target="_blank">
-                 <i class="fa fa-cart-plus"><sup>0</sup></i> 
-              </a>
+         <img src="./pic/dark-logo.png" alt="" class="logo">
+         <div class="search-menu">
+            <input type="search" name="search" id="search" placeholder="search product here.....">
+            <button class="btnn">Search</button>
+         </div>
+         <div class="menu-icons">
+            <!-- <i class="bx bxs-like bx-md" onclick="myFunction(this)"></i> -->
+            <i class="fa fa-thumbs-up fa-2x" onclick="myFunction(this)"></i>
+            <img src="./pic/user.png" alt="">
+            <p class="cartss">
+               <a href="./cart.html" target="_blank">
+                  <i class="fa fa-cart-plus fa-2x" style="color:#383838;"><sup>0</sup></i>
+               </a>
             </p>
-           <!-- <img src="./pic/cart.png" alt=""> -->
-        </div>
-        <div class="wrap">
-           <input type="checkbox" name="toggle" id="toggle" class="checkbox">
-           <label for="toggle" class="ham">
+            <!-- <img src="./pic/cart.png" alt=""> -->
+         </div>
+         <div class="wrap">
+            <p class="cartss">
+               <a href="./cart.html" target="_blank">
+                  <i class="fa fa-cart-plus fa-2x" style="color:#383838;"><sup>0</sup></i>
+               </a>
+            </p>
+            <input type="checkbox" name="toggle" id="checkbox" class="checkbox">
+            <label for="checkbox" class="ham">
                <div class="top-bun"> </div>
-              <div class="meat"></div>
-              <div class="bottom-bun"></div>
-           </label>
-           <div class="nav">
-               <p><a href="index.html" class="activate">Home</a></p>
-               <p><a href="#product">Product</a></p>
-               <p><a href="#categories">Categories</a></p>
-               <p><a href="#Services">services</a></p>
-               <p><a href="./contact.html">Contact</a></p>
-             </div>
-           </div>
-        </div>
-
+               <div class="meat"></div>
+               <div class="bottom-bun"></div>
+            </label>
+            <div class="nav">
+               <div id="nav-bar">
+                  <p><a href="index.html" class="activate">Home</a></p>
+                  <p><a href="#product">Product</a></p>
+                  <p><a href="#categories">Categories</a></p>
+                  <p><a href="#Services">services</a></p>
+                  <p><a href="#contact">Contact</a></p>
+               </div>
+            </div>
+         </div>
+   
       </nav>
       <div class="nav-bar">
          <p><a href="index.html" class="activate">Home</a></p>
@@ -67,7 +73,99 @@
       </div>
       <div class="products"></div>
    </div>
+    <footer>
+      <div class="footer-head">
+         <p>Talk live with our speacialist</p>
+         <p class="mail">
+           <span><i class="fa fa-envelope"></i>services@clothing.com</span>
+           <span><i class="fa fa-phone"></i> +2349087654345</span> 
+         </p>
+      </div>
+      <div class="footer-grid">
+         <div class="my-account">
+            <h2>my account</h2>
+            <p>user interaaction</p>
+            <p>market alerts</p>
+            <p>product reviews</p>
+            <p>price alerts</p>
+            <p>discount offer</p>
+            <p>ccount settings</p>
+         </div>
+         <div class="team">
+            <h2>Brand team</h2>
+            <p>services</p>
+            <p>careers <a href="#">(we're hiring)</a></p>
+            <p>leadership team</p>
+            <p>sitemap</p>
+         </div>
+         <div class="customer-care">
+            <h2>customer care</h2>
+            <p>where is my order?</p>
+            <p>contact us</p>
+            <p>FAQ</p>
+            <p>shipping & delivery</p>
+            <p>return & exchanges</p>
+            <p>Payment FAQs</p>
+            <p>state sales tax information</p>
+         </div>
+         <div class="buying-sell">
+            <h2>Selling</h2>
+            <p>sell your product</p>
+            <p>coin values</p>
+            <p>seller rights</p>
+            <p>storage</p>
+            <p>international</p>
+            <p>terms and conditions</p>
+         </div>
+         <div class="education">
+            <h2>information</h2>
+            <p>prices</p>
+            <p>how to buy</p>
+            <p>how much should i buy</p>
+            <p>promotion</p>
+         </div>
+      </div>
+      <div class="footer-sub">
+         <img src="./pic/light-logo.png" alt="" class="logo-light">
+         <div class="subscribe">
+            <p>whether you're intend to buy now or later <br>we're glad you are here. Stay informed of Our <br> special offers.</p>
+            <input type="email" name="emaill" id="email" placeholder="user@example.com"><span class="email">subscribe</span>
+            <p>supported payments systems</p>
+            <div class="payment">
+               <span><img src="./pic/visa.png" alt=""></span>
+               <span><img src="./pic/credit-card.png" alt=""></span>
+               <span><img src="./pic/bitcoin-wallet.png" alt=""></span>
+            </div>
+         </div>
+         <div class="following">
+            <h3>Follow </h3>
+            <aside>
+               <span><i class="fa fa-facebook"></i></span>
+               <span><i class="fa fa-twitter"></i></span>
+               <span><i class="fa fa-instagram"></i></span>
+               <span><i class="fa fa-youtube"></i></span>
+            </aside>
+            <div class="classic">
+              <div>
+                <p>Autum</p>
+                <p>Winter</p>
+                <p>spring</p>
+                <p>summer</p>
+              </div> 
+              <div>
+                <p>Casual</p>
+                <p>Urban</p>
+                <p>classic</p>
+                <p>sport</p>
+              </div>
+            </div>
+         </div>
+      </div>
+      <div class="copyright">
+         <span>Copyright 2022. Allright Reserved</span>
+      </div>
+  </footer>
    <script src="./cart.js"></script>
-
+    
 </body>
 </html>

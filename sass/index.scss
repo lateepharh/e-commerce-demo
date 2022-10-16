@@ -30,6 +30,7 @@ nav{
    align-self: center;
    i{
       font-size: 24px;
+      margin: -38px 10px 0 0 ;
    }
    a{
      margin-right:3px ;
@@ -45,7 +46,8 @@ nav{
 }
 @include responsive{
    .wrap{
-      display: block;
+      display:flex;
+      gap:25px;
    }
    #checkbox {
       display: none;
@@ -456,7 +458,7 @@ a{
    }
    @include responsive{
       width: 200px;
-      height: 290px;
+      height: 260px;
       padding: 10px ;
    }
    img{
@@ -465,7 +467,7 @@ a{
       object-fit: cover;
       border-radius: 15px;
       @include responsive{
-         width: 190px;
+         width: 180px;
          height: 150px;
       }
    }
@@ -511,7 +513,7 @@ a{
    gap: 20px;
    padding: 0 8vw;
    @include responsive{
-      padding: 0 5vw;
+      padding: 0 auto;
       grid-template-columns: repeat(2,1fr);
       align-items: center;
       justify-content: center;
